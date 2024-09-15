@@ -1,0 +1,144 @@
+.top-center{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.top-left{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.top-right{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.bottom-center{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bottom-left{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.bottom-right{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.center-left{
+    position: fixed;
+    transform: translateY(-50%);
+    left: 10px;
+    top: 50%;
+}
+.center-right{
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+}
+
+
+
+.toast-error{
+    max-width: 250px;
+    min-width: 200px;
+    color: #fff;
+    background-color: #E23E32;
+    position: fixed;
+    border: none;
+    border-radius: 3px;
+    column-gap: 2px;
+    padding: 10px;
+}
+.toast-success{
+    max-width: 250px;
+    color: #fff;
+    min-width: 200px;
+    background-color: #04B20B;
+    position: fixed;
+    border: none;
+    border-radius: 3px;
+    column-gap: 2px;
+    padding: 10px;
+    
+}
+.toast-warning{
+    max-width: 250px;
+    color: #fff;
+    min-width: 200px;
+    background-color: #ECB90D;
+    position: fixed;
+    border: none;
+    border-radius: 3px;
+    column-gap: 2px;
+    padding: 10px;
+    
+}
+.error-line{
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color: #E5C9C3;
+    border-bottom-left-radius:3px ;
+    border-bottom-right-radius: 3px;
+    left: 0;
+    animation: line 1s linear  1  ;
+}
+.success-line{
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color:#ACE7B0;
+    border-bottom-left-radius:3px ;
+    border-bottom-right-radius: 3px;
+    left: 0;
+    animation: line 1s linear  1  ;
+}
+.warning-line{
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color:#F9E8AD;
+    border-bottom-left-radius:3px ;
+    border-bottom-right-radius: 3px;
+    left: 0;
+    animation: line 1s linear  1  ;
+}
+
+@keyframes line {
+    from{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+select{
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: none;
+    color: gray;
+    font-size: 1.1rem;
+    border: 1px solid #8566E4;
+    transition: border-color 0.3s ease, 
+}
+option:checked  {
+    background-color: #8566E4; 
+    color: white; 
+  }
+
